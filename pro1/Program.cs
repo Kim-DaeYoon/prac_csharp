@@ -9,60 +9,6 @@ using System;
 
 namespace myStudy
 {
-    // fly 행동 구현 인터페이스
-    public interface FlyBehavior
-    {
-        public void fly();
-    }
-
-    public class FlyWithWings : FlyBehavior
-    {
-        public void fly()
-        {
-            Console.WriteLine("날고 있어요");
-        }
-    }
-
-    public class FlyNoWay : FlyBehavior
-    {
-        public void fly()
-        {
-            Console.WriteLine("나는 못 날아요");
-        }
-    }
-   
-    // 꽥꽥 행동 구현 인터 페이스
-    public interface QuackBehavior
-    {
-        public void quack();
-    }
-
-    public class Quack : QuackBehavior
-    {
-        public void quack()
-        { 
-            Console.WriteLine("꽥");
-        }
-    }
-
-    public class MuteQuack : QuackBehavior
-    {
-        public void quack()
-        {
-            Console.WriteLine("조용");
-        }
-    }
-
-    public class Squeak : QuackBehavior
-    {
-        public void quack()
-        {
-            Console.WriteLine("삑");
-        }
-    }
-
-
-    
     // 오리 추상 클래스 
     public abstract class Duck
     {
@@ -72,6 +18,16 @@ namespace myStudy
         public Duck(){}
 
         public abstract void display();
+
+        public void setFlyBehavior(FlyBehavior fb)
+        {
+            flyBehavior = fb;
+        }
+
+        public void setQuakBehavior(QuackBehavior qb)
+        {
+            quackBehavior = qb;
+        }
 
         public void performFly(){
             flyBehavior.fly();
@@ -100,10 +56,23 @@ namespace myStudy
         }
     }
 
+    public class ModelDuck : Duck
+    {
+        public ModelDuck(){
+            flyBehavior = new FlyNoWay();
+            quackBehavior = new Quack();
+        }
+
+        public override void display()
+        {
+            Console.WriteLine("저는 모형 오리입니다");
+        }
+    }
+
+
 
     public class myApp
     {
-
         static void Main(String[] args)
         {
             Console.WriteLine("Hello, World!");
@@ -111,6 +80,11 @@ namespace myStudy
             Duck mallard = new MallardDuck();
             mallard.performQuack();
             mallard.performFly();
+
+            Duck model  = new ModelDuck();
+            model.performFly();
+            model.setFlyBehavior(new FlyRocketPowered());
+            model.performFly();
         }
     }
 }
