@@ -15,11 +15,11 @@ namespace myStudy
 			{
 				weapon = new KnifeBehavior();
 			}
-
 		}
 
 		public abstract void display();
 
+		// 무기 사용 행위클래스를 교체할 수 있다.
 		public void setWeapon(WeaponBehavior w)
 		{
 			this.weapon = w;
