@@ -29,15 +29,18 @@ namespace myStudy
             quackBehavior = qb;
         }
 
-        public void performFly(){
+        public void performFly()
+        {
             flyBehavior.fly();
         }
 
-        public void performQuack(){
+        public void performQuack()
+        {
             quackBehavior.quack();
         }
 
-        public void swim(){
+        public void swim()
+        {
             Console.WriteLine("모든 오리는 물에 뜹니다.");
         }
     }
@@ -58,7 +61,8 @@ namespace myStudy
 
     public class ModelDuck : Duck
     {
-        public ModelDuck(){
+        public ModelDuck()
+        {
             flyBehavior = new FlyNoWay();
             quackBehavior = new Quack();
         }

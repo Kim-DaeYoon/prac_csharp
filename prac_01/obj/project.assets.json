@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Works\\CSharp\\prac_csharp\\pro1\\pro1.csproj",
-      "projectName": "pro1",
-      "projectPath": "D:\\Works\\CSharp\\prac_csharp\\pro1\\pro1.csproj",
+      "projectUniqueName": "D:\\Works\\CSharp\\prac_csharp\\prac_01\\prac_01.csproj",
+      "projectName": "prac_01",
+      "projectPath": "D:\\Works\\CSharp\\prac_csharp\\prac_01\\prac_01.csproj",
       "packagesPath": "C:\\Users\\Ashes\\.nuget\\packages\\",
-      "outputPath": "D:\\Works\\CSharp\\prac_csharp\\pro1\\obj\\",
+      "outputPath": "D:\\Works\\CSharp\\prac_csharp\\prac_01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ashes\\AppData\\Roaming\\NuGet\\NuGet.Config"

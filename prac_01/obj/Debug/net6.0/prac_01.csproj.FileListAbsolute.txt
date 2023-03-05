@@ -1,0 +1,15 @@
+D:\Works\CSharp\prac_csharp\prac_01\obj\Debug\net6.0\prac_01.csproj.AssemblyReference.cache
+D:\Works\CSharp\prac_csharp\prac_01\obj\Debug\net6.0\prac_01.GeneratedMSBuildEditorConfig.editorconfig
+D:\Works\CSharp\prac_csharp\prac_01\obj\Debug\net6.0\prac_01.AssemblyInfoInputs.cache
+D:\Works\CSharp\prac_csharp\prac_01\obj\Debug\net6.0\prac_01.AssemblyInfo.cs
+D:\Works\CSharp\prac_csharp\prac_01\obj\Debug\net6.0\prac_01.csproj.CoreCompileInputs.cache
+D:\Works\CSharp\prac_csharp\prac_01\bin\Debug\net6.0\prac_01.exe
+D:\Works\CSharp\prac_csharp\prac_01\bin\Debug\net6.0\prac_01.deps.json
+D:\Works\CSharp\prac_csharp\prac_01\bin\Debug\net6.0\prac_01.runtimeconfig.json
+D:\Works\CSharp\prac_csharp\prac_01\bin\Debug\net6.0\prac_01.dll
+D:\Works\CSharp\prac_csharp\prac_01\bin\Debug\net6.0\prac_01.pdb
+D:\Works\CSharp\prac_csharp\prac_01\obj\Debug\net6.0\prac_01.dll
+D:\Works\CSharp\prac_csharp\prac_01\obj\Debug\net6.0\refint\prac_01.dll
+D:\Works\CSharp\prac_csharp\prac_01\obj\Debug\net6.0\prac_01.pdb
+D:\Works\CSharp\prac_csharp\prac_01\obj\Debug\net6.0\prac_01.genruntimeconfig.cache
+D:\Works\CSharp\prac_csharp\prac_01\obj\Debug\net6.0\ref\prac_01.dll
