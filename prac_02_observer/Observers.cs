@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-// 옵저버
+// 옵저버 (리스너)
 namespace myStudy
 {
 
