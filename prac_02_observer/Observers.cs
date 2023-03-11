@@ -19,13 +19,27 @@ namespace myStudy
             _weatherData.registerObserver(this);
         }
 
-        // subject(WeatherData) -> here : 노티파이 받는 함수 
+        // subject(WeatherData) -> here : 노티파이 받는 함수
+         //(서브젝트에서 옵저버로 데이터를 주는 push 방식 )
+         /*
         public void update(float temperature, float humidity, float pressure)
         {
             this.temperature = temperature;
             this.humidity = humidity;
             display();
         }
+        */
+
+        // subject(WeatherData) -> here : 노티파이 받는 함수
+        // 옵저버가 서브젝트로 부터 데이터 가져오는 pull 방식 
+        public void update()
+        {
+            // 서브젝트인 weatherData를 가지고 있으므로 pull 방식 사용가능
+            this.temperature = _weatherData.getTemperature();
+            this.humidity = _weatherData.getHumidity();
+            display();
+        }
+
 
         public void display()
         {

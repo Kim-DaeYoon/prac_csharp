@@ -16,7 +16,11 @@ namespace myStudy
     // 온도, 습도, 기압
     public interface IObserver
     {
-        public void update(float temp, float humidity, float pressure);
+        // 서버젝트에서 옵저버로 데이터 주는 push 방식 
+        //public void update(float temp, float humidity, float pressure);
+
+        // 옵저버에서 서브젝트에서 데이터 가져오는 pull방식
+        public void update();
     }
 
     public interface IDisplayElement

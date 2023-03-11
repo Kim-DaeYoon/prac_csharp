@@ -16,6 +16,22 @@ namespace myStudy
             observers = new List<IObserver>();
         }
 
+        public float getTemperature()
+        {
+            return temperature;
+        }
+
+        public float getHumidity()
+        {
+            return humidity;
+        }
+
+        public float getPressure()
+        {
+            return pressure;
+        }
+
+
         //---------------------------------------------------------------
         // Subject 인터페이스의 메소드 여기서 구현 
         // 옵저버 추가(등록)
@@ -35,7 +51,11 @@ namespace myStudy
         {
             foreach (var item in observers)
             {
-                item.update(temperature,humidity,pressure);
+                // 서브젝트에서 옵저버로 데이터 보내 주는 push 방식
+                //item.update(temperature,humidity,pressure);
+
+                // 옵저버에서 서브젝트에서 데이터 가져오는 pull 방식
+                item.update();
             }
         }
 
